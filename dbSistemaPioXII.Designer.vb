@@ -22,7 +22,7 @@ Option Explicit On
  Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema"),  _
  Global.System.Xml.Serialization.XmlRootAttribute("_Novo_a__Aplicativo_Microsoft_Office_AccessDataSet"),  _
  Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")>  _
-Partial Public Class _Novo_a__Aplicativo_Microsoft_Office_AccessDataSet
+Partial Public Class dbSistemaPioXII
     Inherits Global.System.Data.DataSet
     
     Private tabletbsecretaria As tbsecretariaDataTable
@@ -128,7 +128,7 @@ Partial Public Class _Novo_a__Aplicativo_Microsoft_Office_AccessDataSet
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
     Public Overrides Function Clone() As Global.System.Data.DataSet
-        Dim cln As _Novo_a__Aplicativo_Microsoft_Office_AccessDataSet = CType(MyBase.Clone,_Novo_a__Aplicativo_Microsoft_Office_AccessDataSet)
+        Dim cln As dbSistemaPioXII = CType(MyBase.Clone,dbSistemaPioXII)
         cln.InitVars
         cln.SchemaSerializationMode = Me.SchemaSerializationMode
         Return cln
@@ -225,7 +225,7 @@ Partial Public Class _Novo_a__Aplicativo_Microsoft_Office_AccessDataSet
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
     Public Shared Function GetTypedDataSetSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
-        Dim ds As _Novo_a__Aplicativo_Microsoft_Office_AccessDataSet = New _Novo_a__Aplicativo_Microsoft_Office_AccessDataSet()
+        Dim ds As dbSistemaPioXII = New dbSistemaPioXII()
         Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
         Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
         Dim any As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
@@ -502,7 +502,7 @@ Partial Public Class _Novo_a__Aplicativo_Microsoft_Office_AccessDataSet
         Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
             Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
             Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
-            Dim ds As _Novo_a__Aplicativo_Microsoft_Office_AccessDataSet = New _Novo_a__Aplicativo_Microsoft_Office_AccessDataSet()
+            Dim ds As dbSistemaPioXII = New dbSistemaPioXII()
             Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
             any1.Namespace = "http://www.w3.org/2001/XMLSchema"
             any1.MinOccurs = New Decimal(0)
@@ -838,7 +838,7 @@ Namespace _Novo_a__Aplicativo_Microsoft_Office_AccessDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As _Novo_a__Aplicativo_Microsoft_Office_AccessDataSet.tbsecretariaDataTable) As Integer
+        Public Overloads Overridable Function Fill(ByVal dataTable As dbSistemaPioXII.tbsecretariaDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Me.ClearBeforeFill = true) Then
                 dataTable.Clear
@@ -851,9 +851,9 @@ Namespace _Novo_a__Aplicativo_Microsoft_Office_AccessDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As _Novo_a__Aplicativo_Microsoft_Office_AccessDataSet.tbsecretariaDataTable
+        Public Overloads Overridable Function GetData() As dbSistemaPioXII.tbsecretariaDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            Dim dataTable As _Novo_a__Aplicativo_Microsoft_Office_AccessDataSet.tbsecretariaDataTable = New _Novo_a__Aplicativo_Microsoft_Office_AccessDataSet.tbsecretariaDataTable()
+            Dim dataTable As dbSistemaPioXII.tbsecretariaDataTable = New dbSistemaPioXII.tbsecretariaDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
@@ -861,14 +861,14 @@ Namespace _Novo_a__Aplicativo_Microsoft_Office_AccessDataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataTable As _Novo_a__Aplicativo_Microsoft_Office_AccessDataSet.tbsecretariaDataTable) As Integer
+        Public Overloads Overridable Function Update(ByVal dataTable As dbSistemaPioXII.tbsecretariaDataTable) As Integer
             Return Me.Adapter.Update(dataTable)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataSet As _Novo_a__Aplicativo_Microsoft_Office_AccessDataSet) As Integer
+        Public Overloads Overridable Function Update(ByVal dataSet As dbSistemaPioXII) As Integer
             Return Me.Adapter.Update(dataSet, "tbsecretaria")
         End Function
         

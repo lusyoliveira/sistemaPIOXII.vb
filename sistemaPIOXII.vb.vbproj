@@ -14,7 +14,7 @@
     <ManifestCertificateThumbprint>47DD4F44E5367DFF24E7785E6633DADC0720FEE5</ManifestCertificateThumbprint>
     <ManifestKeyFile>sistemaPIOXII.vb_TemporaryKey.pfx</ManifestKeyFile>
     <GenerateManifests>true</GenerateManifests>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -106,10 +106,10 @@
     <Compile Include="SplashScreen1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="_Novo_a__Aplicativo_Microsoft_Office_AccessDataSet.Designer.vb">
+    <Compile Include="dbSistemaPioXII.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>_Novo_a__Aplicativo_Microsoft_Office_AccessDataSet.xsd</DependentUpon>
+      <DependentUpon>dbSistemaPioXII.xsd</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -139,20 +139,20 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="_Novo_a__Aplicativo_Microsoft_Office_AccessDataSet.xsc">
-      <DependentUpon>_Novo_a__Aplicativo_Microsoft_Office_AccessDataSet.xsd</DependentUpon>
+    <None Include="dbSistemaPioXII.xsc">
+      <DependentUpon>dbSistemaPioXII.xsd</DependentUpon>
     </None>
-    <None Include="_Novo_a__Aplicativo_Microsoft_Office_AccessDataSet.xsd">
+    <None Include="dbSistemaPioXII.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_Novo_a__Aplicativo_Microsoft_Office_AccessDataSet.Designer.vb</LastGenOutput>
+      <LastGenOutput>dbSistemaPioXII.Designer.vb</LastGenOutput>
     </None>
-    <None Include="_Novo_a__Aplicativo_Microsoft_Office_AccessDataSet.xss">
-      <DependentUpon>_Novo_a__Aplicativo_Microsoft_Office_AccessDataSet.xsd</DependentUpon>
+    <None Include="dbSistemaPioXII.xss">
+      <DependentUpon>dbSistemaPioXII.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Novo%28a%29 Aplicativo Microsoft Office Access.mdb">
+    <Content Include="dbSistemaPioXII.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

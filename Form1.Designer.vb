@@ -45,7 +45,7 @@ Partial Class Form1
         Me.ServicoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.SolitacaoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.TbsecretariaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me._Novo_a__Aplicativo_Microsoft_Office_AccessDataSet = New sistemaPIOXII.vb._Novo_a__Aplicativo_Microsoft_Office_AccessDataSet
+        Me._Novo_a__Aplicativo_Microsoft_Office_AccessDataSet = New sistemaPIOXII.vb.dbSistemaPioXII
         Me.TbsecretariaTableAdapter = New sistemaPIOXII.vb._Novo_a__Aplicativo_Microsoft_Office_AccessDataSetTableAdapters.tbsecretariaTableAdapter
         CodigoLabel = New System.Windows.Forms.Label
         ServicoLabel = New System.Windows.Forms.Label
@@ -288,7 +288,7 @@ Partial Class Form1
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents _Novo_a__Aplicativo_Microsoft_Office_AccessDataSet As sistemaPIOXII.vb._Novo_a__Aplicativo_Microsoft_Office_AccessDataSet
+    Friend WithEvents _Novo_a__Aplicativo_Microsoft_Office_AccessDataSet As sistemaPIOXII.vb.dbSistemaPioXII
     Friend WithEvents TbsecretariaBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents TbsecretariaTableAdapter As sistemaPIOXII.vb._Novo_a__Aplicativo_Microsoft_Office_AccessDataSetTableAdapters.tbsecretariaTableAdapter
     Friend WithEvents TbsecretariaBindingNavigator As System.Windows.Forms.BindingNavigator
