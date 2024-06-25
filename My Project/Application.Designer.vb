@@ -29,17 +29,15 @@ Namespace My
             Me.SaveMySettingsOnExit = true
             Me.ShutDownStyle = Global.Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterMainFormCloses
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerStepThroughAttribute()>
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.sistemaPIOXII.vb.Form1
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerStepThroughAttribute()>
         Protected Overrides Sub OnCreateSplashScreen()
-            Me.SplashScreen = Global.sistemaPIOXII.vb.SplashScreen1
         End Sub
-        
+
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Function OnInitialize(ByVal commandLineArgs As System.Collections.ObjectModel.ReadOnlyCollection(Of String)) As Boolean
             Me.MinimumSplashScreenDisplayTime = 0
