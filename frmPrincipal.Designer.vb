@@ -24,25 +24,42 @@ Partial Class frmPrincipal
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.CadastrosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SolicitaçõesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CadastrosToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1419, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1419, 28)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'StatusStrip1
         '
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 716)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 718)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(1419, 24)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1419, 22)
         Me.StatusStrip1.TabIndex = 2
         Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'CadastrosToolStripMenuItem
+        '
+        Me.CadastrosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SolicitaçõesToolStripMenuItem})
+        Me.CadastrosToolStripMenuItem.Name = "CadastrosToolStripMenuItem"
+        Me.CadastrosToolStripMenuItem.Size = New System.Drawing.Size(88, 24)
+        Me.CadastrosToolStripMenuItem.Text = "Cadastros"
+        '
+        'SolicitaçõesToolStripMenuItem
+        '
+        Me.SolicitaçõesToolStripMenuItem.Name = "SolicitaçõesToolStripMenuItem"
+        Me.SolicitaçõesToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.SolicitaçõesToolStripMenuItem.Text = "Solicitações"
         '
         'frmPrincipal
         '
@@ -56,6 +73,8 @@ Partial Class frmPrincipal
         Me.Name = "frmPrincipal"
         Me.Text = "Modulo Secretaria"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -63,4 +82,6 @@ Partial Class frmPrincipal
 
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents CadastrosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SolicitaçõesToolStripMenuItem As ToolStripMenuItem
 End Class
