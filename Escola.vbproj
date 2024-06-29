@@ -81,10 +81,10 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmPrincipal.Designer.vb">
-      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    <Compile Include="frmPrincipalEscola.Designer.vb">
+      <DependentUpon>frmPrincipalEscola.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmPrincipal.vb">
+    <Compile Include="frmPrincipalEscola.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSolicitacao.vb">
@@ -113,8 +113,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmPrincipal.resx">
-      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    <EmbeddedResource Include="frmPrincipalEscola.resx">
+      <DependentUpon>frmPrincipalEscola.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSolicitacao.resx">
       <SubType>Designer</SubType>

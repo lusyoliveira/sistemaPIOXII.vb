@@ -1,4 +1,4 @@
-﻿Public Class frmPrincipal
+﻿Public Class frmPrincipalEscola
     Private Sub frmPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         GetConnection()
     End Sub
